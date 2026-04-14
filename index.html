@@ -1,67 +1,279 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>安心のリースバック | garden</title>
-    
-    <!-- Google Fonts: 見出し用(Zen Maru Gothic) と 本文用(Noto Sans JP) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- 
-      【重要】VS Codeで作業する際は、以下のlinkタグを有効にし、
-      下の <style> ブロックの中身を css/1style.css に移動してください。
-    -->
-    <link rel="stylesheet" href="css/1style.css">
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="沖縄のリースバックは設立35年のgardenへ。ご自宅を売却後もそのまま住み続けられる安心のサービスです。">
+  <title>安心のリースバック | garden</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/1style.css">
 </head>
 <body>
 
-    <!-- ヘッダー -->
-    <header class="header">
-        <div class="header-inner">
-            <h1 class="logo">
-                <img src="logo.webp" alt="garden RC建売住宅専門" onerror="this.src='https://placehold.co/150x50/79987A/white?text=garden+Logo'">
-            </h1>
-            <div class="header-contact">
-                <a href="#contact" class="btn-contact">お問合せフォーム</a>
-                <span class="tel">TEL 098-988-6663</span>
-            </div>
-        </div>
-    </header>
+  <!-- ========== ヘッダー ========== -->
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="logo">
+        <a href="#hero">
+          <img src="logo.webp" alt="garden" onerror="this.src='https://placehold.co/150x50/79987A/white?text=garden';this.onerror=null;">
+        </a>
+      </h1>
+      <div class="header-contact">
+        <a href="tel:0989886663" class="tel">TEL 098-988-6663</a>
+        <a href="#contact" class="btn-contact">お問合せフォーム</a>
+      </div>
+    </div>
+  </header>
 
-    <!-- ファーストビュー (FV) -->
+  <main>
+
+    <!-- ========== FV ========== -->
     <section id="hero" class="hero">
-        
-        <div class="bg-shape shape-pink"></div>
-        <div class="bg-shape shape-green"></div>
-        <div class="bg-shape shape-yellow"></div>
-        <div class="bg-shape shape-line"></div>
+      <div class="bg-shape shape-pink"></div>
+      <div class="bg-shape shape-green"></div>
+      <div class="bg-shape shape-yellow"></div>
 
-        <div class="hero-inner">
-            <div class="hero-text">
-                <p class="sub-copy">沖縄生まれ、設立35年目の信頼と安心の実績</p>
-                <h2 class="main-copy">
-                    リースバックは<br>
-                    安心の<span>ガーデンに</span><br>
-                    おまかせ！
-                </h2>
-            </div>
-
-            <div class="hero-illust">
-                <img src="hero-house.webp" alt="温かみのある家と植物" class="image-house" onerror="this.style.display='none';">
-                <img src="staff-woman.webp" alt="笑顔の女性スタッフ" class="illust-staff" onerror="this.src='https://placehold.co/200x300/E08A52/white?text=Staff+Woman'">
-            </div>
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="sub-copy">沖縄生まれ、設立35年目の信頼と安心の実績</p>
+          <h2 class="main-copy">
+            リースバックは<br>
+            安心の<span>ガーデン</span>に<br>
+            おまかせ！
+          </h2>
+          <p class="hero-lead">
+            住み慣れたご自宅で暮らしながら、<br>
+            まとまった資金をご用意できます。
+          </p>
+          <a href="#contact" class="btn-primary">無料で相談してみる</a>
         </div>
+
+        <div class="hero-illust">
+  <img src="hero-house.webp" alt="温かみのある家と植物" class="image-house"
+       onerror="this.src='https://placehold.co/450x400/E2E8DA/4A4A4A?text=House+Illust';this.onerror=null;">
+  <img src="staff-woman.webp" alt="笑顔の女性スタッフ" class="illust-staff"
+       onerror="this.src='https://placehold.co/250x350/F9F6F0/4A4A4A?text=Staff';this.onerror=null;">
+</div>
+      </div>
     </section>
 
-    <!-- 
-      【重要】VS Codeで作業する際は、以下のscriptタグを有効にし、
-      下の <script> ブロックの中身を script.js に移動してください。
-    -->
-    <script src="script.js"></script>
-   
+    <!-- ========== お悩み ========== -->
+    <section id="problems" class="section problems">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-sub">Worries</p>
+          <h2 class="section-title">お困りではありませんか？</h2>
+        </div>
+
+        <div class="problems-wrap">
+          <div class="problems-illust">
+            <img src="worry.webp" alt="悩む人のイラスト"
+                 onerror="this.src='https://placehold.co/360x360/FDF3D2/4A4A4A?text=Worry+Illust';this.onerror=null;">
+          </div>
+          <ul class="problems-list">
+            <li>家の売却を他人に知られたくない</li>
+            <li>ローン返済のために家を売却すると住むところがない</li>
+            <li>リバースモーゲージの条件に合わなかった</li>
+            <li>引っ越しはしたくないが老後の資金は準備したい</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 契約の流れ ========== -->
+    <section id="flow" class="section flow">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-sub">Flow</p>
+          <h2 class="section-title">売却の流れと賃貸契約の流れ</h2>
+        </div>
+
+        <ol class="flow-list">
+          <li class="flow-item">
+            <div class="flow-num">Step 1</div>
+            <img src="flow1.webp" alt="" class="flow-img"
+                 onerror="this.src='https://placehold.co/180x180/E2E8DA/4A4A4A?text=Step+1';this.onerror=null;">
+            <p class="flow-text">ご自宅をガーデンに売却</p>
+          </li>
+          <li class="flow-item">
+            <div class="flow-num">Step 2</div>
+            <img src="flow2.webp" alt="" class="flow-img"
+                 onerror="this.src='https://placehold.co/180x180/F8E4DF/4A4A4A?text=Step+2';this.onerror=null;">
+            <p class="flow-text">売買代金の受取</p>
+          </li>
+          <li class="flow-item">
+            <div class="flow-num">Step 3</div>
+            <img src="flow3.webp" alt="" class="flow-img"
+                 onerror="this.src='https://placehold.co/180x180/FDF3D2/4A4A4A?text=Step+3';this.onerror=null;">
+            <p class="flow-text">ガーデン買取後のご自宅を賃貸契約</p>
+          </li>
+          <li class="flow-item">
+            <div class="flow-num">Step 4</div>
+            <img src="flow4.webp" alt="" class="flow-img"
+                 onerror="this.src='https://placehold.co/180x180/E2E8DA/4A4A4A?text=Step+4';this.onerror=null;">
+            <p class="flow-text">ガーデンに家賃を支払い</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== 当社のポイント ========== -->
+    <section id="points" class="section points">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-sub">Point</p>
+          <h2 class="section-title">当社のポイント</h2>
+        </div>
+
+        <div class="points-grid">
+          <article class="point-card">
+            <div class="point-num">01</div>
+            <img src="point1.webp" alt="" class="point-img"
+                 onerror="this.src='https://placehold.co/200x200/E2E8DA/4A4A4A?text=Point+1';this.onerror=null;">
+            <h3 class="point-title">幅広い専門知識</h3>
+            <p class="point-text">不動産専門の幅広い知識で、誠実に手厚くサポートいたします。</p>
+          </article>
+          <article class="point-card">
+            <div class="point-num">02</div>
+            <img src="point2.webp" alt="" class="point-img"
+                 onerror="this.src='https://placehold.co/200x200/F8E4DF/4A4A4A?text=Point+2';this.onerror=null;">
+            <h3 class="point-title">ご要望に誠実に対応</h3>
+            <p class="point-text">お客さまのご要望をしっかり伺い、さまざまなケースに誠実に対応します。</p>
+          </article>
+          <article class="point-card">
+            <div class="point-num">03</div>
+            <img src="point3.webp" alt="" class="point-img"
+                 onerror="this.src='https://placehold.co/200x200/FDF3D2/4A4A4A?text=Point+3';this.onerror=null;">
+            <h3 class="point-title">35年の信頼と実績</h3>
+            <p class="point-text">沖縄生まれ、設立35年目の信頼と安心の実績でお応えします。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== メリット ========== -->
+    <!-- 要確認：3つの選択肢の具体テキストが原稿に無かったため、一般的な内容で仮入れ -->
+    <section id="merits" class="section merits">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-sub">Merit</p>
+          <h2 class="section-title">リースバックのメリット</h2>
+          <p class="section-lead">お客さまが将来選べる3つの選択肢</p>
+        </div>
+
+        <div class="merits-grid">
+          <div class="merit-card">
+            <div class="merit-icon">🏠</div>
+            <h3 class="merit-title">そのまま住み続ける</h3>
+            <p class="merit-text">売却後も賃貸としてお住まいを継続。引っ越しの必要がありません。</p>
+          </div>
+          <div class="merit-card">
+            <div class="merit-icon">🔁</div>
+            <h3 class="merit-title">将来買い戻せる</h3>
+            <p class="merit-text">資金状況が整えば、ご自宅を再度買い戻すことが可能です。</p>
+          </div>
+          <div class="merit-card">
+            <div class="merit-icon">🌿</div>
+            <h3 class="merit-title">新しい暮らしへ</h3>
+            <p class="merit-text">将来的にお引っ越しを検討される際も、柔軟にご相談いただけます。</p>
+          </div>
+        </div>
+        <p class="note">※ メリット3要素の正式な文面はクライアント確認中</p>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section id="faq" class="section faq">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-sub">FAQ</p>
+          <h2 class="section-title">よくある質問</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary><span class="q">Q</span>リースバック後、自宅に住める期間はどれくらいですか？</summary>
+            <div class="faq-answer"><span class="a">A</span>
+              <p>2年間ごとの定期借家契約となります。詳細はご契約時にご説明いたします。</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="q">Q</span>リースバックでの買取価格はどのように決まりますか？</summary>
+            <div class="faq-answer"><span class="a">A</span>
+              <p>初めのご相談の際にご自宅を査定し、お客さまのご希望も伺ったうえで決定いたします。</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="q">Q</span>仲介手数料はかかりますか？</summary>
+            <div class="faq-answer"><span class="a">A</span>
+              <p>当社が直接買取する場合は、仲介手数料はかかりません。</p>
+            </div>
+          </details>
+          <!-- 要確認：原稿のQ4/A4が噛み合っていなかったため仮掲載 -->
+          <details class="faq-item">
+            <summary><span class="q">Q</span>将来、買い戻すことはできますか？</summary>
+            <div class="faq-answer"><span class="a">A</span>
+              <p>買戻し特約付きの契約も可能です。契約前に条件をご確認ください。<br>
+              <small>※Q4の正式な文面はクライアント確認中</small></p>
+            </div>
+          </details>
+        </div>
+        <p class="note">※ FAQ 5〜7件目の原稿はクライアント確認中</p>
+      </div>
+    </section>
+
+    <!-- ========== 会社紹介 ========== -->
+    <!-- 要確認：会社概要の原稿が無いため仮入れ -->
+    <section id="company" class="section company">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-sub">Company</p>
+          <h2 class="section-title">会社紹介</h2>
+        </div>
+
+        <dl class="company-table">
+          <div><dt>会社名</dt><dd>株式会社 garden（仮）</dd></div>
+          <div><dt>所在地</dt><dd>沖縄県 ○○市 ○○ ○-○-○</dd></div>
+          <div><dt>代表者</dt><dd>―</dd></div>
+          <div><dt>設立</dt><dd>設立35年目</dd></div>
+          <div><dt>電話番号</dt><dd>098-988-6663</dd></div>
+          <div><dt>免許番号</dt><dd>―</dd></div>
+        </dl>
+        <p class="note">※ 会社概要はクライアント確認中</p>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <h2 class="contact-title">
+  まずはお気軽に<br class="sp-br">ご相談ください
+</h2>
+        <p class="contact-lead">ご相談・お見積りは無料です。ご家族だけでそっとご相談いただけます。</p>
+        <div class="contact-buttons">
+          <a href="#" class="btn-primary btn-large">お問合せフォームへ</a>
+          <a href="tel:0989886663" class="btn-tel">
+            <span class="btn-tel-label">お電話でのお問合せ</span>
+            <span class="btn-tel-num">098-988-6663</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== フッター ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; garden. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
