@@ -238,7 +238,7 @@ h1, h2, h3, h4,
   position: absolute;
   bottom: -20px;
   right: -10px;
-  width: 220px;
+  width: 300px;
   filter: drop-shadow(0 10px 15px rgba(0,0,0,0.12));
 }
 .illust-couple {
@@ -557,7 +557,7 @@ h1, h2, h3, h4,
 /* =========================================
    Responsive
    ========================================= */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .section { padding: 70px 0; }
   .section-title { font-size: 1.7rem; }
 
@@ -569,7 +569,7 @@ h1, h2, h3, h4,
   }
   .main-copy { font-size: 2.1rem; }
   .hero-illust { min-height: 360px; }
-  .illust-staff { width: 160px; right: 0; bottom: -10px; }
+  .illust-staff { width: 220px; right: 0; bottom: -10px; }
   .illust-couple { width: 120px; top: 0; left: 0; }
 
   .header-inner { gap: 10px; }
