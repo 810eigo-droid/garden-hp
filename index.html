@@ -1,14 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="style.css"> 
+    <title>安心のリースバック | garden</title>
+    
+    <!-- Google Fonts: 見出し用(Zen Maru Gothic) と 本文用(Noto Sans JP) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- 
+      【重要】VS Codeで作業する際は、以下のlinkタグを有効にし、
+      下の <style> ブロックの中身を css/1style.css に移動してください。
+    -->
+    <link rel="stylesheet" href="css/1style.css">
+   
 </head>
 <body>
 
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo">
+                <img src="logo.webp" alt="garden RC建売住宅専門" onerror="this.src='https://placehold.co/150x50/79987A/white?text=garden+Logo'">
+            </h1>
+            <div class="header-contact">
+                <a href="#contact" class="btn-contact">お問合せフォーム</a>
+                <span class="tel">TEL 098-988-6663</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ファーストビュー (FV) -->
+    <section id="hero" class="hero">
+        
+        <div class="bg-shape shape-pink"></div>
+        <div class="bg-shape shape-green"></div>
+        <div class="bg-shape shape-yellow"></div>
+        <div class="bg-shape shape-line"></div>
+
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="sub-copy">沖縄生まれ、設立35年目の信頼と安心の実績</p>
+                <h2 class="main-copy">
+                    リースバックは<br>
+                    安心の<span>ガーデンに</span><br>
+                    おまかせ！
+                </h2>
+            </div>
+
+            <div class="hero-illust">
+                <img src="hero-house.webp" alt="温かみのある家と植物" class="image-house" onerror="this.style.display='none';">
+                <img src="staff-woman.webp" alt="笑顔の女性スタッフ" class="illust-staff" onerror="this.src='https://placehold.co/200x300/E08A52/white?text=Staff+Woman'">
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+      【重要】VS Codeで作業する際は、以下のscriptタグを有効にし、
+      下の <script> ブロックの中身を script.js に移動してください。
+    -->
     <script src="script.js"></script>
+   
 </body>
 </html>

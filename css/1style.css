@@ -1,0 +1,236 @@
+<style>
+        /* =========================================
+           ここから下を css/1style.css に貼り付けてください
+           ========================================= */
+
+        :root {
+            --color-main: #79987A; /* くすんだグリーン */
+            --color-base: #F9F6F0; /* 生成り色 */
+            --color-accent: #E08A52; /* 温かいオレンジ */
+            --color-text: #4A4A4A; /* チャコールグレー */
+            
+            /* タイポグラフィ指針 */
+            --font-heading: 'Zen Maru Gothic', serif; /* 見出し：丸ゴシック */
+            --font-body: 'Noto Sans JP', sans-serif;   /* 本文：標準ゴシック */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 全体は「標準的なゴシック体」で可読性を重視 */
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-base);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* 見出し、連絡先、ボタンなどは「丸ゴシック」で親しみやすさを */
+        h1, h2, h3, .main-copy, .btn-contact, .tel, .sub-copy {
+            font-family: var(--font-heading);
+            letter-spacing: 0.02em;
+        }
+
+        /* --- ヘッダー --- */
+        .header {
+            background-color: #ffffff;
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 100;
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        /* 連絡先エリア（ご要望の縦並びレイアウト） */
+        .header-contact {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 5px;
+        }
+
+        .tel {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-text);
+            line-height: 1.2;
+        }
+
+        .btn-contact {
+            display: inline-block;
+            background-color: var(--color-main);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-weight: 700;
+            transition: 0.3s;
+            white-space: nowrap;
+        }
+
+        .btn-contact:hover {
+            background-color: #6B8E23;
+            transform: translateY(-2px);
+        }
+
+        /* --- ファーストビュー (FV) --- */
+        .hero {
+            position: relative;
+            padding: 60px 20px 80px;
+            overflow: hidden;
+            background-color: var(--color-base);
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 10;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        /* 背景の有機的な図形 */
+        .bg-shape {
+            position: absolute;
+            z-index: 1;
+        }
+
+        .shape-pink {
+            top: -10%; left: -5%;
+            width: 50vw; height: 50vw;
+            max-width: 600px; max-height: 600px;
+            background-color: #F8E4DF;
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            transform: rotate(-10deg);
+        }
+
+        .shape-green {
+            bottom: -20%; right: -10%;
+            width: 60vw; height: 60vw;
+            max-width: 700px; max-height: 700px;
+            background-color: #E2E8DA;
+            border-radius: 50% 50% 30% 70% / 60% 40% 60% 40%;
+        }
+
+        .shape-yellow {
+            bottom: 5%; left: 15%;
+            width: 250px; height: 250px;
+            background-color: #FDF3D2;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+
+        .shape-line {
+            top: 10%; right: 20%;
+            width: 300px; height: 300px;
+            border: 3px solid #ffffff;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            opacity: 0.5;
+            transform: rotate(20deg);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .sub-copy {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            margin-bottom: 15px;
+            display: inline-block;
+            background-color: #ffffff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            border: 1px solid var(--color-accent);
+        }
+
+        .main-copy {
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 1.4;
+            color: var(--color-text);
+        }
+
+        .main-copy span {
+            color: var(--color-main);
+        }
+
+        .hero-illust {
+            flex: 1;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 450px;
+        }
+
+        .image-house {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .illust-staff {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            width: 250px;
+            height: auto;
+            z-index: 2;
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1)); 
+        }
+
+        /* --- レスポンシブ (スマホ) --- */
+        @media (max-width: 768px) {
+            .header-inner { 
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px; 
+            }
+            .logo img {
+                height: 35px;
+            }
+            .header-contact {
+                width: auto;
+                align-items: flex-end;
+                gap: 3px; 
+            }
+            .tel {
+                font-size: 0.95rem;
+            }
+            .btn-contact {
+                padding: 6px 14px;
+                font-size: 0.8rem;
+            }
+
+            .hero-inner { flex-direction: column; text-align: center; }
+            .sub-copy { font-size: 0.95rem; padding: 5px 10px; }
+            .main-copy { font-size: 2.2rem; }
+            .illust-staff { right: 0; bottom: -30px; width: 180px; }
+        }
+
+        /* =========================================
+           ここから上を css/1style.css に貼り付けてください
+           ========================================= */
+    </style>
