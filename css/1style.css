@@ -84,7 +84,7 @@ h1, h2, h3, h4,
   display: block;
   width: 60px;
   height: 4px;
-  background: var(--color-main);
+  background: var(--color-logo-blue);
   border-radius: 2px;
   margin: 16px auto 0;
 }
@@ -405,7 +405,7 @@ h1, h2, h3, h4,
   padding: 40px 28px;
   border-radius: var(--radius-m);
   text-align: center;
-  border: 2px dashed var(--color-main);
+  border: 2px dashed var(--color-logo-blue);
   box-shadow: var(--shadow-soft);
 }
 .merit-icon { font-size: 3rem; margin-bottom: 16px; }
@@ -527,7 +527,7 @@ h1, h2, h3, h4,
   color: var(--color-text);
   padding: 16px 40px;
   border-radius: var(--radius-l);
-  border: 3px solid var(--color-main);
+  border: 3px solid var(--color-logo-blue);
   font-weight: 700;
   line-height: 1.3;
 }
