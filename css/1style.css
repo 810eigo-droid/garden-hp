@@ -279,7 +279,7 @@ h1, h2, h3, h4,
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
-  background: var(--color-main);
+  background: var(--color-logo-blue);
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -311,13 +311,13 @@ h1, h2, h3, h4,
   top: 50%;
   transform: translateY(-50%);
   font-size: 1.8rem;
-  color: var(--color-main);
+  color: var(--color-logo-blue);
   font-weight: 700;
   z-index: 2;
 }
 .flow-num {
   display: inline-block;
-  background: var(--color-main);
+  background: var(--color-logo-blue);
   color: #fff;
   padding: 4px 16px;
   border-radius: var(--radius-l);
@@ -443,7 +443,7 @@ h1, h2, h3, h4,
   top: 50%;
   transform: translateY(-50%);
   font-size: 1.6rem;
-  color: var(--color-main);
+  color: var(--color-logo-blue);
   transition: 0.3s;
 }
 .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
@@ -462,7 +462,7 @@ h1, h2, h3, h4,
   color: #fff;
   font-family: var(--font-heading);
 }
-.faq-item .q { background: var(--color-main); }
+.faq-item .q { background: var(--color-logo-blue); }
 .faq-item .a { background: var(--color-accent); }
 .faq-answer {
   padding: 0 60px 24px 70px;
