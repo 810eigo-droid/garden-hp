@@ -63,8 +63,23 @@ h1, h2, h3, h4,
   padding: 0 24px;
 }
 .section { padding: 100px 0; position: relative; }
-.section-head { text-align: center; margin-bottom: 60px; }
-/* ★変更：section-subをブロック表示（スマホで改行させる） */
+
+/* ★ セクションヘッド：左ラインカード */
+.section-head {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-head-inner {
+  display: inline-block;
+  background: #FFFFFF;
+  padding: 20px 48px 24px 52px;
+  border-radius: 12px;
+  border-left: 6px solid var(--color-logo-blue);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+/* ★ セクション英語サブタイトル（オレンジ） */
 .section-sub {
   display: block;
   color: var(--color-accent);
@@ -73,13 +88,18 @@ h1, h2, h3, h4,
   letter-spacing: 0.2em;
   margin-bottom: 8px;
 }
+
+/* ★ セクション日本語タイトル（チャコールグレー＝元の色） */
 .section-title {
   font-size: 2.2rem;
-  font-weight: 700;
+  font-weight: 900;
+  line-height: 1.3;
+  margin-top: 0;
   color: var(--color-text);
   position: relative;
   display: inline-block;
 }
+
 .section-title::after {
   content: "";
   display: block;
@@ -136,7 +156,6 @@ h1, h2, h3, h4,
   gap: 16px;
 }
 .logo img { height: 64px; width: auto; }
-/* ★変更：ヘッダー連絡先を横並び1段に */
 .header-contact {
   display: flex;
   flex-direction: row;
@@ -149,7 +168,6 @@ h1, h2, h3, h4,
   color: var(--color-text);
   line-height: 1.2;
 }
-/* PC用電話番号は表示、スマホ用アイコンは非表示 */
 .tel-pc { display: inline; }
 .tel-sp { display: none; }
 
@@ -573,6 +591,11 @@ h1, h2, h3, h4,
   .section { padding: 70px 0; }
   .section-title { font-size: 1.7rem; }
 
+  /* スマホ：カードのパディング調整 */
+  .section-head-inner {
+    padding: 16px 24px 20px 28px;
+  }
+
   .hero { padding: 50px 16px 80px; }
   .hero-inner {
     grid-template-columns: 1fr;
@@ -584,12 +607,11 @@ h1, h2, h3, h4,
   .illust-staff { width: 220px; right: 0; bottom: -10px; }
   .illust-couple { width: 120px; top: 0; left: 0; }
 
-  /* ★変更：スマホヘッダー */
+  /* スマホヘッダー */
   .header-inner { gap: 8px; }
   .logo img { height: 44px; }
   .header-contact { gap: 8px; }
   .btn-contact { padding: 6px 14px; font-size: 0.8rem; }
-  /* PC用電話番号を非表示、スマホ用アイコンを表示 */
   .tel-pc { display: none; }
   .tel-sp {
     display: flex;
