@@ -572,6 +572,10 @@ h1, h2, h3, h4,
 @media (max-width: 768px) {
   .section { padding: 70px 0; }
   .section-title { font-size: 1.7rem; }
+  .section-sub {
+    display: block;
+    margin-bottom: 4px;
+  }
 
   .hero { padding: 50px 16px 80px; }
   .hero-inner {
